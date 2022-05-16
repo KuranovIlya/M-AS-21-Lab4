@@ -3,7 +3,7 @@ version: '3.8'
 services:
   molecule:
     build: .
-    container_name: molecule
+    container_name: audio
     restart: always
     ports:
       - 8080:80
