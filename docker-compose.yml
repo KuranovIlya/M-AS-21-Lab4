@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  molecule:
+  audio:
     build: .
     container_name: audio
     restart: always
