@@ -1,0 +1,41 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Audio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet/less" href="less/style.less">
+    <script src="js/libs/less-1.2.2.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <div class="pull-left editable" id="project-name"></div>
+                <div class="btn-toolbar" id="playback-controls">
+                    <input type="text" id="time-display" value="-:--:--.---">
+                    <button class="btn" id="play" title="Запустить"><i class="icon-play"></i></button>
+                    <button class="btn" id="stop" title="Остановить" ><i class="icon-stop"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menubar menubar-fixed" id="menu-view">
+        <ul class="nav nav-pills"></ul>
+    </div>
+    <div id="app-frame" class="container-fluid">
+        <div class="row-fluid">
+               <div class="span12" id="editor-view">
+                <div class="inner">
+                    <div id="time-line"></div>
+                    <div id="tracks"></div>
+                </div> 
+            </div>
+        </div> 
+    </div>
+
+
+    <script data-main="js/main" src="js/libs/require/require.js"></script>
+</body>
+</html>
